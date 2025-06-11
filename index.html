@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Hub - Your Ultimate Cricket Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cricket-ball"></i>
+                <span>Cricket Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#scores" class="nav-link">Live Scores</a></li>
+                <li><a href="#players" class="nav-link">Players</a></li>
+                <li><a href="#trivia" class="nav-link">Trivia</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="cricket-ball"></div>
+            <div class="cricket-stumps"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Cricket Hub</h1>
+            <p class="hero-subtitle">Your ultimate destination for Indian cricket</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">World Cups</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Champions Trophy</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">T20 World Cup</span>
+                </div>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('scores')">
+                <i class="fas fa-play"></i>
+                Explore Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Live Scores Section -->
+    <section id="scores" class="scores-section">
+        <div class="container">
+            <h2 class="section-title">Live Scores</h2>
+            <div class="scores-grid">
+                <div class="match-card">
+                    <div class="match-header">
+                        <span class="match-status live">LIVE</span>
+                        <span class="match-format">T20</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team">
+                            <img src="assets\512px-Flag_of_India.svg.webp" alt="India" class="team-flag">
+                            <span class="team-name">India</span>
+                            <span class="team-score">185/4 (18.2)</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <img src="assets\Flag_of_Australia_(converted).svg.webp" alt="Australia" class="team-flag">
+                            <span class="team-name">Australia</span>
+                            <span class="team-score">197/7 (20.0)</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <p>India need 12 runs in 8 balls</p>
+                    </div>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-header">
+                        <span class="match-status upcoming">UPCOMING</span>
+                        <span class="match-format">ODI</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team">
+                            <img src="assets/512px-Flag_of_India.svg.webp" alt="India" class="team-flag">
+                            <span class="team-name">India</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <img src="assets\512px-Flag_of_England.svg.webp" alt="England" class="team-flag">
+                            <span class="team-name">England</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <p>Tomorrow, 2:30 PM IST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section id="players" class="players-section">
+        <div class="container">
+            <h2 class="section-title">Star Players</h2>
+            <div class="players-grid">
+                <div class="player-card" onclick="showPlayerDetails('virat')">
+                    <div class="player-image">
+                        <img src="assets\Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg" alt="Virat Kohli">
+                    </div>
+                    <div class="player-info">
+                        <h3>Virat Kohli</h3>
+                        <p>Captain • Batsman</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span>14,181</span>
+                                <label>ODI Runs</label>
+                            </div>
+                            <div class="stat">
+                                <span>51</span>
+                                <label>ODI Centuries</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-card" onclick="showPlayerDetails('rohit')">
+                    <div class="player-image">
+                        <img src="assets\Prime_Minister_Of_Bharat_Shri_Narendra_Damodardas_Modi_with_Shri_Rohit_Gurunath_Sharma_(Cropped).jpg.webp" alt="Rohit Sharma">
+                    </div>
+                    <div class="player-info">
+                        <h3>Rohit Sharma</h3>
+                        <p>Vice Captain • Batsman</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span>11,168</span>
+                                <label>ODI Runs</label>
+                            </div>
+                            <div class="stat">
+                                <span>32</span>
+                                <label>ODI Centuries</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="player-card" onclick="showPlayerDetails('bumrah')">
+                    <div class="player-image">
+                        <img src="assets\Jasprit_Bumrah_in_PMO_New_Delhi.jpg" alt="Jasprit Bumrah">
+                    </div>
+                    <div class="player-info">
+                        <h3>Jasprit Bumrah</h3>
+                        <p>Bowler</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span>149</span>
+                                <label>ODI Wickets</label>
+                            </div>
+                            <div class="stat">
+                                <span>4.59</span>
+                                <label>Economy Rate</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trivia Section -->
+    <section id="trivia" class="trivia-section">
+        <div class="container">
+            <h2 class="section-title">Cricket Trivia</h2>
+            <div class="trivia-container">
+                <div class="trivia-card">
+                    <div class="trivia-header">
+                        <h3>Test Your Cricket Knowledge!</h3>
+                        <div class="score-display">
+                            Score: <span id="triviaScore">0</span>/5
+                        </div>
+                    </div>
+                    <div class="question-container">
+                        <div class="question" id="triviaQuestion">
+                            Click "Start Quiz" to begin!
+                        </div>
+                        <div class="options" id="triviaOptions">
+                            <!-- Options will be populated by JavaScript -->
+                        </div>
+                        <div class="trivia-controls">
+                            <button id="startQuiz" class="quiz-btn">Start Quiz</button>
+                            <button id="nextQuestion" class="quiz-btn" style="display: none;">Next Question</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="section-title">Latest Cricket News</h2>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="assets\118822670.webp" alt="Cricket News">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Match Report</span>
+                        <h3>India Dominates in T20 Series Opener</h3>
+                        <p>A spectacular batting display led India to a commanding victory in the first T20I, setting the tone for an exciting series ahead.</p>
+                        <div class="news-meta">
+                            <span class="news-date">2 hours ago</span>
+                            <span class="news-author">Cricket Hub</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets\10094067.webp" alt="Player News">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Player Update</span>
+                        <h3>Kohli Reaches New Milestone</h3>
+                        <p>The batting maestro adds another record to his illustrious career with a stunning performance.</p>
+                        <div class="news-meta">
+                            <span class="news-date">5 hours ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets\dubai-united-arab-emirates-virat-kohli-of-india-looks-dejected-after-the-icc-mens-t20-world.webp" alt="Team News">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Team News</span>
+                        <h3>Squad Announced for Upcoming Tour</h3>
+                        <p>BCCI announces the squad for the upcoming international series with some surprising inclusions.</p>
+                        <div class="news-meta">
+                            <span class="news-date">1 day ago</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cricket-ball"></i>
+                        <span>Cricket Hub</span>
+                    </div>
+                    <p>Your ultimate destination for Indian cricket news, scores, and updates.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#scores">Live Scores</a></li>
+                        <li><a href="#players">Players</a></li>
+                        <li><a href="#trivia">Trivia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cricket Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Player Modal -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="playerDetails">
+                <!-- Player details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
