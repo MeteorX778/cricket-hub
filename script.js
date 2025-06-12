@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const playerData = {
     virat: {
       name: "Virat Kohli",
-      role: "Captain • Batsman",
+      role: "Vice Captain • Batsman",
       image: "https://imgs.search.brave.com/NYUbn2p-UtaBYM3Y3vFzdp1nk7FfJkBVV0-sMG2ydq8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudG9paW1nLmNv/bS90aHVtYi9tc2lk/LTEyMTY3OTM0Myxp/bWdzaXplLTM1OTky/LHdpZHRoLTQwMCxy/ZXNpemVtb2RlLTQv/MTIxNjc5MzQzLmpw/Zw",
       stats: {
         "ODI Runs": "14181",
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     rohit: {
       name: "Rohit Sharma",
-      role: "Vice Captain • Batsman",
+      role: "Captain • Batsman",
       image: "https://imgs.search.brave.com/liLU7uDUeqjyt9_fT9Rwe2EgCFO4ss-Yq-aL0aUYh4A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTgw/MjI5NzQ4MC9waG90/by9haG1lZGFiYWQt/aW5kaWEtcm9oaXQt/c2hhcm1hLW9mLWlu/ZGlhLXJlYWN0cy1k/dXJpbmctdGhlLWlj/Yy1tZW5zLWNyaWNr/ZXQtd29ybGQtY3Vw/LWluZGlhLTIwMjMu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWtUTWpxRU8wS1ht/WG5wTkp2T0pOUXZl/Ym83MnJVeS1aOVgw/S0Q5Q3Q2aEk9",
       stats: {
         "ODI Runs": "11168	",
